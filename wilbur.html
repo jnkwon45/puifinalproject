@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Jessica Kwon</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage fixed header and footer." />
+	<meta name="keywords"  content="fullpage,jquery,demo,screen,fixed, header,footer, absolute, positioned,css" />
+	<meta name="Resource-type" content="Document" />
+	<link rel="stylesheet" type="text/css" href="assets/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="assets/style.css" />
+	<style>
+		/* Style for header texts
+		* --------------------------------------- */
+		h1{
+			font-size: 3em;
+			font-family: playfair display;
+			color: #FFF;
+			margin:0;
+			padding:0;
+		}
+		h2{
+			font-size: 1.5em;
+			font-family: playfair display;
+			color: #FFF;
+			margin:0;
+			padding:0;
+		}
+		h3{
+			font-family: source sans pro;
+			color: #FFF;
+		}
+		.intro p{
+			font-size: 1.0em;
+			font-family: source sans pro;
+			color: #FFF;
+		}
+
+		/* Centered texts in each section
+		* --------------------------------------- */
+		.section{
+			text-align:center;
+		}
+
+		/* Fixed header
+		* --------------------------------------- */
+		#header{
+			position:absolute;
+			height: 50px;
+			display:block;
+			width: 100%;
+			background: #FFF;
+			z-index:9;
+			text-align:left;
+			color: #f2f2f2;
+			padding: 20px 0 0 0;
+		}
+
+		#header{
+			top:0px;
+		}
+
+		/* Backgrounds will cover all the sections
+		* --------------------------------------- */
+		#section0,
+		#section1,
+		#section2,
+		#section3,
+		#section4,
+		#section5{
+			background-size: cover;
+			background-attachment: fixed;
+		}
+
+		/* Defining each section background and styles
+		* --------------------------------------- */
+		#section0{
+			background: -webkit-gradient(linear, top left, bottom left, from(#3385C7), to(#2D7BB9));
+			background: -webkit-linear-gradient(#3385C7, #2D7BB9);
+			background: linear-gradient(#3385C7,#2D7BB9);
+		}
+		#section1{
+			background: -webkit-gradient(linear, top left, bottom left, from(#2D7BB9), to(#266FA9));
+			background: -webkit-linear-gradient(#2D7BB9, #266FA9);
+			background: linear-gradient(#2D7BB9,#266FA9);
+		}
+		#section2{
+			background: -webkit-gradient(linear, top left, bottom left, from(#266FA9), to(#1F639A));
+			background: -webkit-linear-gradient(#266FA9, #1F639A);
+			background: linear-gradient(#266FA9,#1F639A);
+		}
+		#section3{
+			background: -webkit-gradient(linear, top left, bottom left, from(#1F639A), to(#1A5A8D));
+			background: -webkit-linear-gradient(#1F639A, #1A5A8D);
+			background: linear-gradient(#1F639A,#1A5A8D);
+		}
+		#section4{
+			background: -webkit-gradient(linear, top left, bottom left, from(#1A5A8D), to(#14507F));
+			background: -webkit-linear-gradient(#1A5A8D, #14507F);
+			background: linear-gradient(#1A5A8D,#14507F);
+		}
+		#section5{
+			background: -webkit-gradient(linear, top left, bottom left, from(#14507F), to(#0F4773));
+			background: -webkit-linear-gradient(#14507F, #0F4773);
+			background: linear-gradient(#14507F,#0F4773);
+		}
+		#section6{
+			background: -webkit-gradient(linear, top left, bottom left, from(#0F4773), to(#0B406A));
+			background: -webkit-linear-gradient(#0F4773, #0B406A);
+			background: linear-gradient(#0F4773,#0B406A);
+		}
+		#section7{
+			background: -webkit-gradient(linear, top left, bottom left, from(#0B406A), to(#083B63));
+			background: -webkit-linear-gradient(#0B406A, #083B63);
+			background: linear-gradient(#0B406A,#083B63);
+		}
+
+	</style>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="assets/jquery.fullPage.js"></script>
+	<script type="text/javascript" src="assets/main.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				css3: false
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<!--Menu-->
+	<div id="header">
+		<h1 class="logo">Jessica Kwon</h1>
+		<div class="navbar"><ul>
+		    <li class="homebut" id="displayedpage"><a href="home.html">HOME</a></li>
+		    <li class="aboutbut"><a href="about.html">ABOUT ME</a></li>
+		    <li class="contactbut"><a href="contact.html">CONTACT ME</a></li>
+		    <li class="resumebut"><a href="https://drive.google.com/file/d/1yaW2RHBm9pmduTD9N1aMBjwCgw8unMnw/view?usp=sharing">RESUME</a></li>
+		</ul></div>
+	</div>
+	<!--Content-->
+	<div id="fullpage">
+		<div class="section" id="section0">
+			</br></br></br></br>
+			<div class="intro">
+				<img src="assets/imgs/contentbanner.png" alt="contentbanner" width="400">
+				</br></br>
+				<h1>Wilbur</h1>
+				</br>
+				<h3>9 week project done in course "Service Design" with Kailin Dong, Allison Mui, Ketki Jadhav, and Violet Zhao (Oct-Dec 2017)</h3>
+				<h3>My role: primary and secondary researching, service conceptualizing, persona making, UX/UI designing, concept video making, project documenting</h3>
+				</br></br>
+				<h2>̌</h2>
+			</div>
+		</div>
+		<div class="section" id="section1">
+			<div class="intro">
+				</br></br></br></br>
+				<h2>1. Overview</h2>
+				</br></br>
+				<p>
+					Our team conceived of and designed a future service that could leverage data to help parents and teens have a dialogue about financial literacy for PNC Bank, our client. Our solution, Wilbur, simulates the real world to teach and and allow teenagers to practice good credit score building habits.
+				</p>
+				</br></br>
+				<h2>̌</h2>
+			</div>
+		</div>
+		<div class="section" id="section2">
+			<div class="intro">
+				</br></br></br></br>
+				<h2>2. Primary Research</h2>
+				</br></br>
+				<p>
+					We first created a set of questions gauging financial knowledge, such as current financial habits, emotional responses to financial conversations, and familiarity and knowledge of financial terms. The questions were created from insights after examining related articles. With these questions, we interviewed both parents and teenagers, the demographics we would be targeting our service towards.
+					</br></br>
+					We found out that: 
+					</br></br>
+					1. Some teens want to earn money and are interested in becoming financially literate, so that they can buy more things.
+					</br></br>
+					2. Teenagers primarily spend on clothes, food, and social outings.
+					</br></br>
+					3. Some teenagers use saving apps to keep track of their expenses. However, it is a trend that many teenagers are only using apps that deal with short-term saving but not other aspects of finance.
+					</br></br>
+				</p>
+				</br></br>
+				<h2>̌</h2>
+			</div>
+		</div>
+		<div class="section" id="section3">
+			<div class="intro">
+				</br></br></br></br>
+				<h2>3. Stakeholder Research</h2>
+				</br></br>
+				<p>
+					With insights gained from interviews and financial literacy articles, we created a stakeholder model to identify the stakeholders of our problem. From the model, we found that there is a lack of variety in the financial tools that teenagers use; most of the current tools focus on saving and budgeting. We also found that there is a huge gap between the current state of teenagers and credit cards.
+				</p>
+				</br>
+				<img src="assets/imgs/stakeholder.png" alt="stakeholder" width="400">
+				</br></br>
+				<h2>̌</h2>
+			</div>
+		</div>
+		<div class="section" id="section4">
+			<div class="intro">
+				</br></br></br></br>
+				<h2>"Most young adults drop out of college because of credit debt rather than underperformace in school."</h2>
+				</br></br>
+				<h2>̌</h2>
+			</div>
+		</div>
+		<div class="section" id="section5">
+			<div class="intro">
+				</br></br></br></br>
+				<h2>4. Current State Research</h2>
+				</br></br>
+				<p>
+					Exploring further into the problem of not preparing teenagers for credit cards, we found that more college students drop out from school because of credit card debt rather than poor academic performance. Most young adults were learning about the credit system from their parents or through painful trial and error.
+					</br></br>
+					To visualize this problem, we created a current state model that highlights the snowball effect of credit card debt for teenagers and young adults.
+				</p>
+				</br>
+				<img src="assets/imgs/currentstate.png" alt="currentstate" width="400">
+				</br></br>
+				<h2>̌</h2>
+			</div>
+		</div>
+		<div class="section" id="section6">
+			<div class="intro">
+				</br></br></br></br>
+				<h2>5. Service Conceptualization</h2>
+				</br></br>
+				<p>
+					After over 30 concept iterations and speed dating methods, we solidified our final concept - Wilbur. We created a service blueprint for our service that caters to all of our stakeholders' needs. We focused on the motivation and engagement of our stakeholders during their journey throughout the service, as well as the connecting of parents and teenagers through facilitating conversations on budgeting and spending.
+				</p>
+				</br></br>
+				<h2>̌</h2>
+			</div>
+		</div>
+		<!--Carousel-->
+		<div class="section" id="section7">
+		</br></br>
+	        <div class="slide active" id="slide1">
+	        	<img src="assets/imgs/1.png" alt="1" width=700>
+	        </div>
+	        <div class="slide" id="slide2">
+	            <img src="assets/imgs/2.png" alt="2" width=700>
+	        </div>
+	        <div class="slide" id="slide3">
+	            <img src="assets/imgs/3.png" alt="3" width=700>
+	        </div>
+	        <div class="slide" id="slide4">
+	            <img src="assets/imgs/4.png" alt="4" width=700>
+	        </div>
+	        <div class="slide" id="slide5">
+	            <img src="assets/imgs/5.png" alt="5" width=700>
+	        </div>
+        </div>
+
+    </div>
+	</div>
+
+</body>
+</html>

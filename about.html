@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Jessica Kwon</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage fixed header and footer." />
+	<meta name="keywords"  content="fullpage,jquery,demo,screen,fixed, header,footer, absolute, positioned,css" />
+	<meta name="Resource-type" content="Document" />
+	<link rel="stylesheet" type="text/css" href="assets/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="assets/style.css" />
+	<style>
+		/* Style for header texts
+		* --------------------------------------- */
+		h1{
+			font-size: 3em;
+			font-family: playfair display;
+			color: #333;
+			margin:0;
+			padding:0;
+		}
+		h2{
+			font-size: 1.5em;
+			font-family: playfair display;
+			color: #333;
+			margin:0;
+			padding:0;
+		}
+		h3{
+			font-family: source sans pro;
+		}
+
+		.intro p{
+			font-size: 1.0em;
+			font-family: source sans pro;
+			color: #333;
+			text-align: left;
+		}
+
+		/* Centered texts in each section
+		* --------------------------------------- */
+		.section{
+			text-align:center;
+		}
+
+		/* Fixed header
+		* --------------------------------------- */
+		#header{
+			position:absolute;
+			height: 50px;
+			display:block;
+			width: 100%;
+			background: #FFF;
+			z-index:9;
+			text-align: left;
+			color: #f2f2f2;
+			padding: 20px 0 0 0;
+		}
+
+		#header{
+			top:0px;
+		}
+
+		/* Backgrounds will cover all the sections
+		* --------------------------------------- */
+		#section0,
+		#section1,
+		#section2,
+		#section3{
+			background-size: cover;
+			background-attachment: fixed;
+		}
+
+		/* Defining each sectino background and styles
+		* --------------------------------------- */
+		#section0{
+			background-image: url(assets/imgs/intro.png);
+		}
+		#section0 h1{
+			top: 50%;
+			transform: translateY(-50%);
+			position: relative;
+		}
+		#section1{
+			background-image: url(assets/imgs/intro.png);
+			padding: 6% 0 0 0;
+	</style>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="assets/jquery.fullPage.js"></script>
+	<script type="text/javascript" src="assets/main.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				css3: false
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<!--Menu-->
+	<div id="header">
+		<h2 class="logo">Jessica Kwon</h2>
+		<div class="navbar"><ul>
+		    <li class="homebut"><a href="home.html">HOME</a></li>
+		    <li class="aboutbut" id="displayedpage"><a href="about.html">ABOUT ME</a></li>
+		    <li class="contactbut"><a href="contact.html">CONTACT ME</a></li>
+		    <li class="resumebut"><a href="https://drive.google.com/file/d/1yaW2RHBm9pmduTD9N1aMBjwCgw8unMnw/view?usp=sharing">RESUME</a></li>
+		</ul></div>
+	</div>
+	<!--Content-->
+	<div id="fullpage">
+		<div class="section" id="section0">
+			<div class="intro">
+				<div class="pic">
+					<img src="assets/imgs/me.jpg" alt="me" width="300">
+				</div>
+				<div class="aboutcontent">
+					<h2>Hi, I'm Jessica.</h2>
+					</br></br>
+					<p>I am a junior at Carnegie Mellon University, double majoring in human-computer interaction and psychology with a minor in business administration. I love electronic and alternative music, tea, museums, and the bustle of cities. There is a good chance that you can find me enjoying all of these things simultaneously. I like to capture and share moments through my iPhone lens, disposable camera, and VSCO.</p>
+					</br></br>
+					<p>I think that design is all about people. My passion lies in focusing on the human aspect of interaction design to make our experiences with technology more intuitive and enjoyable. The process of creating beautiful and delightful user experience through empathizing with users and transforming it into an intelligent solution is something truly special.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
